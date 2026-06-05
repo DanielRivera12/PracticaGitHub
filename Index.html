@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios con Firebase</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script>
+        // Configuración de Firebase del proyecto
+          const firebaseConfig = {
+            apiKey: "AIzaSyAKwuYl_60BlwPx2oGbhsXhfVfcKwWmHHk",
+            authDomain: "pro-usuarios-36890.firebaseapp.com",
+            projectId: "pro-usuarios-36890",
+            storageBucket: "pro-usuarios-36890.firebasestorage.app",
+            messagingSenderId: "396042546496",
+            appId: "1:396042546496:web:21cd23792e46a4857d5ea5",
+            measurementId: "G-6L25X8GSDZ"
+          };
+        // Inicializar Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body>
+    <h1>Registro de usuarios</h1>
+    <input id="email" type="email" placeholder="Ingresa tu correo">
+    <input id="password" type="password" placeholder="Ingresa tu contraseña">
+    <button onclick="registrar()">Enviar</button>
+    <script src="app.js"></script>
+</body>
+</html>
